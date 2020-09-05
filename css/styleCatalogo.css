@@ -83,27 +83,37 @@ aside img {
 }
 
 @media (max-width:1000px) {
-
+  
   #bodyPeliculas {
-    background-image: none;
-  }
+    background-image: url(../images/cameraDark.jpg);
+    background-size: cover;
+}
 
   #bodySeries {
-    background-image: none;
+    background-image: url(../images/tvshowsDark.jpg);
+    background-size: cover;
   }
-
+  
   .imagenLateralPelis {
     display: none;
   }
-
+  
   .imagenLateralSeries {
     display: none;
   }
-
+  
   #textWrapper {
     margin-left: 0;
     margin-top: 10%;
     overflow: auto;
+    background-color: transparent;
+    color: white;
+    text-shadow: 1px 1px #000;
+    font-size: 1em;
+  }
+
+  #textWrapper ul, #textWrapper li {
+    background-color: transparent;
   }
 
   
