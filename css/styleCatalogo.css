@@ -1,0 +1,111 @@
+#imgPeliculas {
+  display: inline-block;
+}
+
+#bodyPeliculas {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  background-color: #1d1b1b;
+  color: #00ccff;
+  width: 100%;
+  height: 70%;
+}
+
+.imagenLateralPelis {
+  width: 100%;
+  display: inline-flex;
+  align-items: flex-start;
+  background-image: url(../images/camera.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imagenLateralSeries {
+  width: 100%;
+  display: inline-flex;
+  background-image: url(../images/tvshows.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+aside img {
+  display: inline-flex;
+}
+
+#bodySeries {
+  text-align: center;
+  display: flex;
+  background-color: #1d1b1b;
+  color: #00ccff;
+  width: 100%;
+  height: 70%;
+  }
+
+
+  #textWrapper {
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+    background-color: #1d1b1b;
+    align-items: center;
+    overflow: auto;
+}
+
+  #buscador {
+    background-color: #1d1b1b;
+  }
+
+  div form {
+    background-color: #1d1b1b;
+  }
+
+  div ul {
+      text-align: start;
+      background-color: #1d1b1b;
+  }
+
+  div li {
+      color: #ffffff;
+      background-color: #1d1b1b;
+  }
+
+  table {
+      border: 1px solid #ffffff;
+      text-align: center;
+      margin-left:auto;
+      margin-right:auto;
+      background-color: #1d1b1b;
+      display: inline-block;
+  }
+
+  th, tr, td {
+      color: #ffffff;
+}
+
+@media (max-width:1000px) {
+
+  #bodyPeliculas {
+    background-image: none;
+  }
+
+  #bodySeries {
+    background-image: none;
+  }
+
+  .imagenLateralPelis {
+    display: none;
+  }
+
+  .imagenLateralSeries {
+    display: none;
+  }
+
+  #textWrapper {
+    margin-left: 0;
+    margin-top: 10%;
+    overflow: auto;
+  }
+
+  
+
+}

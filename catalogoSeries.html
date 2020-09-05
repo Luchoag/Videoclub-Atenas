@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styleCatalogo.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,500"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4dd564dc6d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Videoclub Atenas - Catálogo</title>
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">VIDEOCLUB ATENAS</a> <img width="40" src="./images/ff1.jpg" /></h1>
+      <nav>
+        <input type="checkbox" id="nav-check">
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>        
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="catalogoPeliculas.html">Películas</a>
+          <a href="catalogoSeries.html">Series</a>
+          <a href="about.html">Acerca De</a>
+          <a href="contact.html">Contacto</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="mainBody" id="bodySeries">
+      <aside class="imagenLateralSeries"></aside>
+      <div id="textWrapper">
+        En Videoclub Atenas podrás encontrar la mayor variedad de películas y
+        series de todo tipo. Desde los estrenos más recientes hasta los grandes
+        clásicos del cine, las mayores producciones de Hollywood y las grandes
+        joyas del cine independiente. Contamos con un catálogo de más de 2000
+        títulos cinematográficos y más de 200 series para que puedas disfrutar
+        desde la comodidad de tu casa, ya sea en formato DVD como Blu-Ray.
+        Registrate en nuestra web y hacé tus pedidos online para que puedas
+        tener tu filmografía favorita sin moverte de tu casa.
+        <br /><br />
+        <table>
+          <tr>
+            <th>Alquiler</th>
+            <th>Precio</th>
+          </tr>
+          <tr>
+            <td>24 hs</td>
+            <td>$50</td>
+          </tr>
+          <tr>
+            <td>48 hs</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>72 hs</td>
+            <td>$170</td>
+          </tr>
+          <tr>
+            <td>Día extra</td>
+            <td>+$100</td>
+          </tr>
+        </table>
+        <br />
+        <ul>
+          <li>
+            Las películas o series alquiladas deben ser devueltas en las mismas
+            condiciones en las que fueron entregadas.
+          </li>
+          <li>
+            Cualquier desperfecto o daño observado en los DVDs o Blu-Ray serán
+            cargados a la cuenta del cliente.
+          </li>
+          <li>
+            A partir del cuarto día de alquiler, por cada día extra que el
+            cliente pase sin devolver el DVD o serie se le adicionarán $100 en
+            su cuenta a pagar.
+          </li>
+        </ul>
+        <div id="buscador">
+          Buscá los trailers de tus series favoritas:
+          <form
+            action="http://www.youtube.com/results"
+            method="get"
+            target="_blank"
+          >
+            <input name="search_query" type="text" maxlength="128" />
+            <input type="submit" value="Buscar" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+      <br />
+      Todos los derechos reservados © 2020
+    </footer>
+  </body>
+</html>

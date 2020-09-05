@@ -1,0 +1,52 @@
+.bodyAbout {
+    margin: 0 auto;
+    text-align: center;
+    background-color: #1d1b1b;
+    width: 100%;
+    height: 75%;
+    display: inline-block;
+    max-width: 1920px;
+    overflow: auto;
+}
+
+#mapaText {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #1d1b1b;
+}
+
+#textAbout {
+    font-family: "Quicksand", sans-serif;
+    color: #ffffff;
+    background-color: #1d1b1b;
+    flex-basis: 80%;
+    margin: 0 auto;
+}
+
+#mapa {    
+    margin: 0 auto;
+    margin-top: 1%;
+    background-color: #1d1b1b;  
+}
+
+@media (max-width:1000px) {
+
+    .bodyAbout {
+        margin-top: 2%;
+        height: 100%;
+        display: block;
+    }
+    
+    #mapa {
+        margin: 0 auto;
+        width: 80%;
+        height: 40%;
+        display: block;
+        float: none;
+    }
+
+    #textAbout {
+        margin: 0 auto;
+    }
+
+  }

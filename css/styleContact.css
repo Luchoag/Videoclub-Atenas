@@ -1,0 +1,74 @@
+#wrapper {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #1d1b1b;
+  width: 100%;
+  height: 75%;
+  display: inline-block;
+  max-width: 1920px;
+  overflow: auto;
+}
+
+.bodyContact {
+    background-color: #1d1b1b;    
+}
+
+#form {
+    background-color: #1d1b1b;
+}
+
+#btnSubmit {
+    width: 10%;
+    height: 15%;
+    background-color: ivory;
+    color:black;
+    border-radius: 5px;  
+}
+
+#btnSubmit:hover {
+    border-style: inset;
+    border-radius: 5px;
+    border-color: darkblue;
+}
+
+#form {
+    height: 50%;
+    width: 50%;
+    margin: 0 auto;   
+    display: block;
+}
+
+.contactoMail {
+    background-color: #1d1b1b;
+}
+
+#textContacto {
+    font-size: 1.15em;
+    margin-top: 1%;
+    display: inline-block;
+    background-color: #1d1b1b;
+    text-align: center;
+    align-items: center;
+}
+#textContacto a {
+    background-color: #1d1b1b;
+}
+
+@media (max-width:1000px) {
+
+    #wrapper {
+        margin-top: 2%;
+        height: 100%;
+    }
+    
+    #form {
+        width: 100%;
+    }
+
+    #btnSubmit {
+        width: auto;
+    }
+
+  }
+  
+

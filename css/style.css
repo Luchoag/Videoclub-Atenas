@@ -1,0 +1,228 @@
+* {
+  background-color: #000000;
+  color: #ffffff;
+  /*min-width: 500px;*/
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+header {
+  width: 100%;
+  height: 15%;
+  display: block;
+  position: relative;
+  max-width: 1920px;
+}
+
+h1 {
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 8px;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+h2 {
+  background-color: #191919;
+  font-family: "Quicksand", sans-serif;
+}
+
+nav {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav-links a {
+  width: 15%;
+  height: 100%;
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  max-width: 1920px;
+}
+
+.nav-links a:hover {
+  background-color: #335;
+  border-radius: 5px;
+}
+
+.mainBody {
+  margin: 0 auto;
+  text-align: center;
+  background-color: #1d1b1b;
+  width: 100%;
+  height: 75%;
+  display: inline-block;
+  max-width: 1920px;
+  overflow: auto;
+}
+
+.catalogoButton {
+  width: 120px;
+  height: 35px;
+  background-color: #ffffff;
+  color: #000000;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 35px;
+  font-size: 1.1em;
+  vertical-align: top;
+  border-radius: 5px;
+}
+
+.catalogoButton:hover {
+  border-style: inset;
+  border-radius: 5px;
+  border-color: #335;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  max-width: 1920px;
+  }
+
+nav > .nav-btn {
+  display: none;
+}
+
+nav > #nav-check {
+  display: none;
+}
+
+nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+nav > #nav-check {
+  display: none;
+}
+
+/*Codigo para la visualización del sitio web responsive*/
+@media (max-width: 1000px) {
+  h1 {
+    text-align: right;
+  }
+  h1 a {
+    font-size: 2rem;
+    text-align: left;
+    z-index: 5;
+  }
+
+  h1 img {
+    display: none;
+  }
+
+  nav {
+    top: 10%;
+  }
+
+  /*Posición de las tres líneas de menú responsive*/
+  nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    left: 0px;
+    top: 40%;
+    z-index: 2;
+  }
+
+  /*Tamaño del menú de las tres líneas en responsive*/
+  nav > .nav-btn > label {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding: 13px;
+  }
+
+  nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  nav > .nav-btn > label > span {
+    display: block;
+    width: 1.5em;
+    height: 0.5em;
+    border-top: 3px solid #eee;
+    z-index: 2;
+  }
+
+  /*Posición, color y tamaño del menú desplegable que se abre al hacer clic */
+  nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    /*Animación cuando se abre el menú desplegable*/
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 130%;
+    left: 0%;
+    height: auto;
+    z-index: 1;
+  }
+  nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    height: 10px;
+    text-align: center;
+  }
+  nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+
+  div.mainBody {
+    margin-top: 2%;
+    height: 100%;
+    background-color: 1d1b1b;
+  }
+
+  .mainBody img {
+    width: 100%;
+    height: 80%;
+  }
+
+  footer {
+    text-align: left;
+    position: absolute;
+    margin-top: 0%;
+  }
+
+  html,
+  body {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  nav > .nav-links > a {
+    width: 10%;
+    height: 70%;
+    font-size: 0.7em;
+  }
+
+  #textWrapper {
+    margin-top: 2%;
+    font-size: 0.7em;
+  }
+}
