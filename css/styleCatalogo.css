@@ -87,11 +87,17 @@ aside img {
   #bodyPeliculas {
     background-image: url(../images/cameraDark.jpg);
     background-size: cover;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-top: 10%;
 }
 
   #bodySeries {
     background-image: url(../images/tvshowsDark.jpg);
     background-size: cover;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-top: 10%;
   }
   
   .imagenLateralPelis {
@@ -104,7 +110,6 @@ aside img {
   
   #textWrapper {
     margin-left: 0;
-    margin-top: 10%;
     overflow: auto;
     background-color: transparent;
     color: white;
@@ -116,6 +121,5 @@ aside img {
     background-color: transparent;
   }
 
-  
 
 }

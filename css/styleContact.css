@@ -18,17 +18,16 @@
 }
 
 #btnSubmit {
-    width: 10%;
-    height: 15%;
+    padding: 0.8em 2em;
     background-color: ivory;
     color:black;
-    border-radius: 5px;  
+    border: none;
+    margin-top: 1%;
 }
 
 #btnSubmit:hover {
     border-style: inset;
-    border-radius: 5px;
-    border-color: darkblue;
+    border-radius: 2px;
 }
 
 #form {
