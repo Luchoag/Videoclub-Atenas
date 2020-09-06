@@ -7,11 +7,14 @@ html,
 body {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 .pageWrapper {
-  display: flex;
-  flex-direction: column;
+	height: 100%;
+  min-height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 
@@ -87,6 +90,10 @@ nav {
   overflow: auto;
   height: 100%;
   flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1%;
 }
 
 .catalogoButton {
@@ -109,6 +116,8 @@ footer {
   text-align: center;
   width: 100%;
   max-width: 1920px;
+  position: absolute;
+  bottom: 0;
 }
 
 nav > .nav-btn {
@@ -220,21 +229,9 @@ nav > #nav-check {
     height: 0px;
   }
 
-  div.mainBody {
-    margin-top: 2%;
-    height: 100%;
-    background-color: 1d1b1b;
-    height: 100%;
-    flex-wrap: wrap;
-  }
 
   .mainBody img {
     width: 100%;
-  }
-
-  footer {
-    text-align: left;
-    margin-top: 2%;
   }
 
   html,
@@ -253,11 +250,6 @@ nav > #nav-check {
     margin-top: 2%;
     font-size: 0.7em;
   }  
-
-  footer {
-    position: relative;
-    bottom: 0;
-  }
 
 }
 
