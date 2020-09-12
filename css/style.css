@@ -77,7 +77,7 @@ nav {
 
 
 .nav-links a:hover {
-  background-color: #335;
+  background-color: #115;
   border-radius: 5px;
 }
 
@@ -193,11 +193,15 @@ nav > #nav-check {
   font-size: 1.05em;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: 0.1em;
+  transition: all 0.5s ease-in-out;
 }
 
 #btnRegistro:hover {
   background-color: #fff;
   color: #F08080;
+  cursor: pointer;
+  box-shadow: -7px 7px;
+  transform: scale(1.2);
 }
 
 #whiteSpace {
@@ -332,5 +336,32 @@ nav > #nav-check {
     }
     
 
+} /*Fin media query*/
+
+/*
+@keyframes button-animation {
+  from {
+    transform: scale(1.0);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+*/
+
+
+.fa-twitter-square:hover {
+  background-color: #fff;
+  color: #01aaed;
+}
+
+.fa-facebook-square:hover {
+  background-color: #fff;
+  color: #255ba1;
+}
+
+.fa-instagram-square:hover {
+  background-color: #fff;
+  color: #fe3174;  
 }
 
