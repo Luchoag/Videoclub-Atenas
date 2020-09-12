@@ -19,14 +19,16 @@
 
 #btnSubmit {
     padding: 0.8em 2em;
-    background-color: ivory;
-    color:black;
+    background-color: #F08080;
+    color: #fff;
     border: none;
     margin-top: 1%;
 }
 
 #btnSubmit:hover {
-    border-style: inset;
+    border-style: none;
+    background-color: #fff;
+    color: #F08080;
     border-radius: 2px;
 }
 

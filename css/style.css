@@ -90,7 +90,7 @@ nav {
   overflow: auto;
   height: 100%;
   flex-wrap: wrap;
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   align-items: center;
   margin-top: 1%;
@@ -154,9 +154,64 @@ nav > #nav-check {
   margin-top: 7%;
 }
 
+#texto {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1d1b1b;
+  display: flex;
+  width: 80%;
+}
+
+#texto p {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1d1b1b;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25em;
+}
+
+#texto img {
+  margin-left: 2%;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #1d1d1d;
+  width: 60%;
+  overflow: hidden;
+}
+
+#texto a {
+  margin-top: 6%;
+}
+
+#btnRegistro {
+  padding: 0.8em 0.8em;
+  border: none;
+  background-color: #F08080;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.05em;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.1em;
+}
+
+#btnRegistro:hover {
+  background-color: #fff;
+  color: #F08080;
+}
+
+#whiteSpace {
+  display: none;
+  background-color: transparent;
+}
+
 /*Codigo para la visualización del sitio web responsive*/
 @media (max-width: 1100px) {
   
+  .pageWrapper {
+    overflow: hidden;
+}
+
   h1 a {
     font-size: 2rem;
     text-align: left;
@@ -234,12 +289,7 @@ nav > #nav-check {
     width: 100%;
   }
 
-  html,
-  body {
-    max-height: 400px;
-  }
-
-  nav > .nav-links > a {
+   nav > .nav-links > a {
     width: 100%;
     height: 70%;
     font-size: 0.7em;
@@ -250,6 +300,37 @@ nav > #nav-check {
     margin-top: 2%;
     font-size: 0.7em;
   }  
+  
+    #pageWrapper {
+      display: flex;
+      flex-flow: column;
+    }
+
+    #texto {
+      flex-direction: column;
+      align-items: center;
+      font-size: 1em;
+      flex: 1;
+      background-image: url(../images/videoclubHomeDark.png);
+      background-repeat: no-repeat;
+    }
+
+    #btnRegistro {
+      margin-top: 2%;
+    }
+
+    #texto img {
+      display: none;
+    }
+
+    #texto p {
+      background-color: transparent;
+    }
+
+    #whiteSpace {
+      display: block;
+    }
+    
 
 }
 
