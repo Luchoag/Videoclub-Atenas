@@ -13,25 +13,21 @@
 }
 
 .imagenLateralPelis {
-  width: 100%;
-  display: inline-flex;
-  align-items: flex-start;
+  width: 150%;
+  display: flex;
+  justify-content: flex-start;
   background-image: url(../images/camera.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .imagenLateralSeries {
-  width: 100%;
-  display: inline-flex;
+  width: 150%;
+  display: flex;
   align-items: flex-start;
-  background-image: url(../images/tvshows.jpg);
+  background-image: url(../images/collage3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-aside img {
-  display: inline-flex;
 }
 
 #bodySeries {
@@ -50,6 +46,7 @@ aside img {
     color: #ffffff;
     background-color: #1d1b1b;
     overflow: auto;
+    align-items: flex-end;
 }
 
   #buscador {
