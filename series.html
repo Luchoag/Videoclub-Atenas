@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/styleCatalogo.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styleHeadFoot.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styleSeries.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Quicksand:300,500"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
     <script
       src="https://kit.fontawesome.com/4dd564dc6d.js"
       crossorigin="anonymous"
     ></script>
-    <title>Videoclub Atenas - Películas</title>
+    <title>Videoclub Atenas - Series</title>
   </head>
   <body>
-    <div class="pageWrapper">
-      <header>
+    <div class="wrapper">
+      <header id="head">
         <h1>
           <a href="index.html">VIDEOCLUB ATENAS</a>
           <img width="40" src="./images/ff1.jpg" />
         </h1>
+
         <nav>
           <input type="checkbox" id="nav-check" />
           <div class="nav-btn">
@@ -33,16 +39,16 @@
           </div>
           <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="catalogoPeliculas.html">Películas</a>
-            <a href="catalogoSeries.html">Series</a>
-            <a href="about.html">Acerca De</a>
-            <a href="contact.html">Contacto</a>
+            <a href="peliculas.html">Películas</a>
+            <a href="series.html">Series</a>
+            <a href="about.html">Nosotros</a>
+            <a href="contacto.html">Contacto</a>
           </div>
         </nav>
       </header>
 
-      <div id="bodyPeliculas">
-        <aside class="imagenLateralPelis"></aside>
+      <main class="main">
+        <aside class="imagenLateralSeries"></aside>
         <div id="textWrapper">
           En Videoclub Atenas podrás encontrar la mayor variedad de películas y
           series de todo tipo. Desde los estrenos más recientes hasta los
@@ -51,9 +57,8 @@
           de 2000 títulos cinematográficos y más de 200 series para que puedas
           disfrutar desde la comodidad de tu casa, ya sea en formato DVD como
           Blu-Ray. Registrate en nuestra web y hacé tus pedidos online para que
-          puedas tener tu filmografía favorita sin moverte de tu casa.
-          <br /><br />
-          <table id="tabla">
+          puedas tener tu filmografía favorita sin moverte de tu casa.<br>
+            <table id="tabla">
             <tr>
               <th>Alquiler</th>
               <th>Precio</th>
@@ -75,7 +80,16 @@
               <td>+$100</td>
             </tr>
           </table>
-          <br />
+
+          <form method="get" action="http://www.imdb.com/find" target="_blank">
+            Buscar Series en IMDB:<br>
+            <input type="text" name="q" /><br>
+            <input  id="btnSubmit" 
+              type="submit"
+              value="IR"
+            />
+          </form>
+
           <ul>
             <li>
               Las películas o series alquiladas deben ser devueltas en las
@@ -91,22 +105,9 @@
               su cuenta a pagar.
             </li>
           </ul>
-          <div id="buscador">
-            Buscá los trailers de tus películas favoritas:
-            <form
-              action="http://www.youtube.com/results"
-              method="get"
-              target="_blank"
-            >
-              <input name="search_query" type="text" maxlength="128" />
-              <input type="submit" value="Buscar" />
-            </form>
-          </div>
-        </div>
-        <div id="whiteSpace"><br /><br /><br /><br /></div>
-      </div>
+      </main>
 
-      <footer>
+      <footer id="foot">
         <a href="https://twitter.com" target="_blank"
           ><i class="fab fa-twitter-square"></i
         ></a>

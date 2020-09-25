@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styleIndex.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styleHeadFoot.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Quicksand:300,500"
       rel="stylesheet"
@@ -14,55 +15,59 @@
       src="https://kit.fontawesome.com/4dd564dc6d.js"
       crossorigin="anonymous"
     ></script>
-    <title>Videoclub Atenas - Home</title>
-  </head>
-  <body>
-    <div class="pageWrapper">
-    <header>
-      <h1>
-        <a href="index.html">VIDEOCLUB ATENAS</a>
-        <img width="40" src="./images/ff1.jpg" />
-      </h1>
-      <nav>
-        <input type="checkbox" id="nav-check" />
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="catalogoPeliculas.html">Películas</a>
-          <a href="catalogoSeries.html">Series</a>
-          <a href="about.html">Acerca De</a>
-          <a href="contact.html">Contacto</a>
-        </div>
-      </nav>
-    </header>
-    <div class="mainBody">
-      <div id="texto">
-        <p>¡Tenemos el catálogo de películas y series más grande del país! Registrate y pedí tus pelis favoritas sin moverte de tu casa. Envío sin cargo.<br><br>
-        <a href="contact.html"><button id="btnRegistro" type="button" value="">REGISTRATE</button></p></a>
-        <img width="700" src="./images/videoclubHome.png" />
-      </div>
-    </div>
-    <footer>
-      <a href="https://twitter.com" target="_blank"
-        ><i class="fab fa-twitter-square"></i
-      ></a>
-      <a href="https://facebook.com" target="_blank"
-        ><i class="fab fa-facebook-square"></i
-      ></a>
-      <a href="https://instagram.com" target="_blank"
-        ><i class="fab fa-instagram-square"></i
-      ></a>
-      <br />
-      Todos los derechos reservados © 2020
-    </footer>
-  </div>
+    <title>Videoclub Atenas - Inicio</title>
+</head>
+<body>
 
+    <div class="wrapper">
+        <header id="head">
+            <h1>
+                <a href="index.html">VIDEOCLUB ATENAS</a>
+                <img width="40" src="./images/ff1.jpg" />
+            </h1>
 
-  </body>
+            <nav>
+                <input type="checkbox" id="nav-check" />
+                <div class="nav-btn">
+                  <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </label>
+                </div>
+                <div class="nav-links">
+                  <a href="index.html">Home</a>
+                  <a href="peliculas.html">Películas</a>
+                  <a href="series.html">Series</a>
+                  <a href="about.html">Nosotros</a>
+                  <a href="contacto.html">Contacto</a>
+                </div>
+              </nav>
+
+        </header>
+
+        <main class="main">
+            <div id="contenido">
+                <div><span>¡Tenemos el catálogo de películas y series más grande del país! Registrate y pedí tus pelis favoritas sin moverte de tu casa. Envío sin cargo.</span>
+                <a href="contact.html"><button id="btnRegistro" type="button" value="">REGISTRATE</button></a></div>
+                <img width="700" src="./images/videoclubHome.jpg" />
+            </div>
+        </main>
+
+        <footer id="foot">
+            <a href="https://twitter.com" target="_blank"
+            ><i class="fab fa-twitter-square"></i
+          ></a>
+          <a href="https://facebook.com" target="_blank"
+            ><i class="fab fa-facebook-square"></i
+          ></a>
+          <a href="https://instagram.com" target="_blank"
+            ><i class="fab fa-instagram-square"></i
+          ></a>
+          <br />
+          Todos los derechos reservados © 2020
+        </footer>
+    </div> 
+</body>
+
 </html>

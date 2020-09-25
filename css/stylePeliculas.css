@@ -1,0 +1,115 @@
+.main {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  color: #00ccff;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/cameraDark.jpg);
+  background-size: cover;
+  margin-top: 1%;
+  flex: 1;
+}
+
+#textWrapper {
+  margin-left: 0;
+  overflow: auto;
+  background-color: transparent;
+  color: white;
+  text-shadow: 1px 1px #000;
+  font-size: 1.15rem;
+}
+
+#textWrapper ul,
+#textWrapper li {
+  background-color: transparent;
+}
+
+table {
+  border: 1px solid #ffffff;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #1d1b1b;
+  display: inline-block;
+}
+
+th,
+tr,
+td {
+  color: #ffffff;
+}
+
+form {
+    margin-top: 1%;
+    background-color: transparent;
+}
+
+input {
+  padding: 8px 8px;
+  font-size: 1.15rem;
+  border: 1px solid white;
+  margin-top: 1%;
+}
+
+#btnSubmit {
+  padding: 0.5rem 3rem;
+  background-color: #f08080;
+  color: #fff;
+  border: none;
+  margin-top: 1%;
+  font-size: 1.15rem;
+}
+
+#btnSubmit:hover {
+  border-style: none;
+  background-color: #fff;
+  color: #f08080;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+/* Inicio del diseño responsive */
+/* Patrón utilizado: mobile-first. */
+@media (min-width: 600px) {
+  .main {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    background-color: #1d1b1b;
+    color: #00ccff;
+    width: 100%;
+    height: 100%;
+    background-image: none;
+    margin-top: 4%;
+  }
+
+  .imagenLateralPelis {
+    width: 150%;
+    display: flex;
+    justify-content: flex-start;
+    background-image: url(../images/camera2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: slideshow;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes slideshow {
+    0% {
+      background-image: url(../images/camera2.jpg);
+    }
+    25% {
+      background-image: url(../images/parasite2.jpg);
+    }
+    50% {
+      background-image: url(../images/joker2.jpg);
+    }
+    75% {
+      background-image: url(../images/irishman.jpg);
+    }
+  }
+}

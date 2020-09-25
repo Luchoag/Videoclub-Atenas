@@ -2,117 +2,94 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styleHeadFoot.css" />
+    <link rel="stylesheet" type="text/css" href="./css/styleShowData.css" />
     <title>Videoclub Atenas - Información enviada</title>
   </head>
   <body>
-    <header style="height:2%">
-      <h1>
-        <a href="index.html">VIDEOCLUB ATENAS</a>
-        <img width="40" src="./images/ff1.jpg" />
-      </h1>
-      <nav>
-        <input type="checkbox" id="nav-check" />
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
-        <div class="nav-links">
-          <a href="index.html">Home</a>
-          <a href="catalogoPeliculas.html">Películas</a>
-          <a href="catalogoSeries.html">Series</a>
-          <a href="about.html">Acerca De</a>
-          <a href="contact.html">Contacto</a>
-        </div>
-      </nav>
-    </header>
+    <div class="wrapper">
+      <header id="head">
+          <h1>
+              <a href="index.html">VIDEOCLUB ATENAS</a>
+              <img width="40" src="./images/ff1.jpg" />
+          </h1>
 
-    <div class="feedback">
-    <h2 align="center">
-      <font size="+1"
-        >La siguiente información fue enviada como su respuesta:</font
-      >
-    </h2>
+          <nav>
+              <input type="checkbox" id="nav-check" />
+              <div class="nav-btn">
+                <label for="nav-check">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+              </div>
+              <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="peliculas.html">Películas</a>
+                <a href="series.html">Series</a>
+                <a href="about.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+              </div>
+            </nav>
 
-    <table border="1" align="center" width="226">
-      <tr>
-        <th align="center">Campo</th>
-        <th align="center">Valor</th>
-      </tr>
+      </header>
 
-      <script language="javascript">
-        var args = location.search.substr(1).split("&");
-        for (var i = 0; i < args.length; ++i) {
-          var parts = args[i].split("=");
-          if (parts != null) {
-            var field = parts[0];
-            var value = parts[1];
-            if (value == null) {
-              value = "null";
-            } else {
-              value = '"' + unescape(value.replace(/\+/g, " ")) + '"';
+      <main class="main">
+        <h2 align="center">
+          <font size="+1"
+            >La siguiente información fue enviada como su respuesta:</font
+          >
+        </h2>
+
+        <table border="1" align="center" width="226">
+          <tr>
+            <th align="center">Campo</th>
+            <th align="center">Valor</th>
+          </tr>
+
+          <script language="javascript">
+            var args = location.search.substr(1).split("&");
+            for (var i = 0; i < args.length; ++i) {
+              var parts = args[i].split("=");
+              if (parts != null) {
+                var field = parts[0];
+                var value = parts[1];
+                if (value == null) {
+                  value = "null";
+                } else {
+                  value = '"' + unescape(value.replace(/\+/g, " ")) + '"';
+                }
+
+                document.writeln('<tr><td align="center">' + field + "</td>");
+                document.writeln('<td align="center">' + value + "</td></tr>");
+              }
             }
+          </script>
+       </table>
+      </main>
 
-            document.writeln('<tr><td align="center">' + field + "</td>");
-            document.writeln('<td align="center">' + value + "</td></tr>");
-          }
-        }
-      </script>
+      <footer id="foot">
+          <a href="https://twitter.com" target="_blank"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+        <a href="https://facebook.com" target="_blank"
+          ><i class="fab fa-facebook-square"></i
+        ></a>
+        <a href="https://instagram.com" target="_blank"
+          ><i class="fab fa-instagram-square"></i
+        ></a>
+        <br />
+        Todos los derechos reservados © 2020
+      </footer>
+  </div> 
 
-      <noscript>
-        <tr>
-          <td>
-            <p>You need to turn on Javascript in your browser.</p>
 
-            <p>In Microsoft Internet Explorer 4 or greater:</p>
-            <ul>
-              <li>
-                From the "Tools" menu (in IE 4, it's the "View" menu), select
-                "Internet Options".
-              </li>
-              <li>Click on the "Security" tab.</li>
-              <li>
-                Click on the "Custom Level" button. (In IE 4, select "Custom"
-                and then click on "Settings...".)
-              </li>
-              <li>Under "Active scripting" make sure "Enable" is selected.</li>
-            </ul>
 
-            <p>In Netscape version 4 or greater:</p>
-            <ul>
-              <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
-              <li>
-                In the <b>Category</b> list on the left, click on the word
-                "Advanced".
-              </li>
-              <li>
-                In the panel on the right, make sure "Enable JavaScript" is
-                checked.
-              </li>
-              <li>Click the <b>OK</b> button.</li>
-            </ul>
-          </td>
-        </tr>
-      </noscript>
-    </table>
-  </div>
 
-    <footer>
-      <a href="https://twitter.com" target="_blank"
-        ><i class="fab fa-twitter-square"></i
-      ></a>
-      <a href="https://facebook.com" target="_blank"
-        ><i class="fab fa-facebook-square"></i
-      ></a>
-      <a href="https://instagram.com" target="_blank"
-        ><i class="fab fa-instagram-square"></i
-      ></a>
-      <br />
-      Todos los derechos reservados © 2020
-    </footer>
+
+
+
+
 
   </body>
 </html>
