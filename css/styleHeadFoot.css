@@ -41,6 +41,9 @@ body {
 
 #head h1 a {
   text-decoration: none;
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
 }
 
 #head h1 img {
