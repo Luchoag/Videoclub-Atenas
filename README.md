@@ -7,8 +7,7 @@ Se le ha dado un diseño responsive para que el sitio pueda verse bien desde los
 El sitio está alojado en Netlify y puede verse accediendo desde el siguiente <a href="https://greppi-luciano-tp4.netlify.app/">enlace</a>.<br>
 
 - Vista Desktop:<br>
-<img width="600" src="https://i.imgur.com/c3L1xW1.png">
-
+<img width="600" src="https://i.imgur.com/ajjiQow.jpg">
 
 - Vista mobile:<br>
 <img width="300" src="https://i.imgur.com/9fZQRjW.png">
